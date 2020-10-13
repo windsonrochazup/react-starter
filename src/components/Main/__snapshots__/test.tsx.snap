@@ -32,4 +32,4 @@ exports[`<Main /> should render the heading 1`] = `
     🚀 Start here!
   </h1>
 </main>
-`;
+`
