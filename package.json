@@ -13,6 +13,8 @@
     "test:watch": "yarn test --watch",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "code-validator": "yarn lint-staged",
+    "clean": "rm -rf node_modules yarn.lock coverage .next && yarn cache clean --mirror",
+    "ci": "yarn clean && yarn install --frozen-lockfile",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "commit": "git-cz",
